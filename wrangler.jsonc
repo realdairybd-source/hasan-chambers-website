@@ -1,0 +1,14 @@
+{
+  "name": "hasan-chambers",
+  "main": "worker.js",
+  "compatibility_date": "2026-10-02",
+  "secrets": {
+    "required": ["RESEND_API_KEY", "ENQUIRY_TO", "ENQUIRY_FROM"]
+  },
+  "assets": {
+    "directory": ".",
+    "binding": "ASSETS",
+    "run_worker_first": ["/api/*"],
+    "exclude": ["worker.js", "wrangler.jsonc", "README.txt", ".dev.vars*"]
+  }
+}
